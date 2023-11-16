@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
     behaviors {
@@ -48,6 +49,11 @@
             bindings = <&kp UNDER>;
             key-positions = <29 30>;
         };
+
+        screen_shot {
+            bindings = <&kp LG(LS(S))>;
+            key-positions = <13 22>;
+        };
     };
 
     keymap {
@@ -61,10 +67,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-&kp TAB    &kp Q        &kp W  &kp E     &kp R  &kp T           &kp Y                       &kp U     &kp I      &kp O    &kp P     &kp ESC
-&kp LCTRL  &tp A LS(A)  &kp S  &kp D     &kp F  &kp G           &kp H                       &kp J     &kp K      &kp L    &kp SEMI  &tp LC(LS(LALT)) SQT
-&kp LSHFT  &kp Z        &kp X  &kp C     &kp V  &kp B           &kp N                       &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                               &kp LGUI  &mo 1  &tp LALT RET    &tp LC(LS(LA(LGUI))) SPACE  &kp BSPC  &mo 2
+&kp TAB    &kp Q        &kp W  &kp E     &kp R            &kp T           &kp Y                       &tp LA(LC(U)) U  &kp I      &kp O    &kp P     &kp ESC
+&kp LCTRL  &tp A LS(A)  &kp S  &kp D     &tp LA(LS(F)) F  &kp G           &kp H                       &kp J            &kp K      &kp L    &kp SEMI  &tp LC(LS(LALT)) SQT
+&kp LSHFT  &kp Z        &kp X  &kp C     &kp V            &kp B           &kp N                       &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                               &kp LGUI  &mo 1            &tp LALT RET    &tp LC(LS(LA(LGUI))) SPACE  &kp BSPC         &mo 2
             >;
         };
 
@@ -93,7 +99,7 @@
             bindings = <
 &trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6    &kp F7    &kp F8  &kp F9     &kp F10  &trans
 &trans      &kp C_PREV    &kp C_NEXT    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP        &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans    &trans    &trans  &trans     &trans   &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans    &trans    &trans  &trans     &trans   &out OUT_TOG
                                         &trans        &trans        &trans          &trans    &trans    &trans
             >;
         };
