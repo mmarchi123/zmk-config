@@ -67,10 +67,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T             &kp Y                    &tp LA(LC(U)) U  &kp I      &kp O    &kp P     &kp ESC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G             &kp H                    &kp J            &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B             &kp N                    &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp DELETE
-                         &kp LGUI  &mo 1  &tp LALT SPACE    &tp LEFT_SHIFT KP_ENTER  &kp BSPC         &mo 2
+&kp TAB    &kp Q  &kp W  &kp E     &kp R   &kp T             &kp Y                    &tp LA(LC(U)) U  &kp I      &kp O    &kp P     &kp ESC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F   &kp G             &kp H                    &kp J            &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V   &kp B             &kp N                    &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp DELETE
+                         &kp LGUI  &tog 1  &tp LALT SPACE    &tp LEFT_SHIFT KP_ENTER  &kp BSPC         &tog 2
             >;
         };
 
@@ -85,7 +85,7 @@
 &trans     &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSLH
 &trans     &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp MINUS  &kp EQUAL  &kp GRAVE        &kp LBKT  &kp RBKT  &kp PIPE
 &kp LSHFT  &kp N6    &kp N7  &kp N8    &kp N9    &kp N0       &kp UNDER  &kp PLUS   &kp TILDE        &kp LBRC  &kp RBRC  &kp DEL
-                             &trans    &trans    &trans       &trans     &trans     &trans
+                             &trans    &tog 0    &trans       &trans     &trans     &trans
             >;
         };
 
