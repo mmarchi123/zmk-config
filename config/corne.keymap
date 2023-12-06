@@ -26,6 +26,8 @@
             label = "TAP_DANCE";
             #binding-cells = <0>;
             bindings = <&kp SQT>, <&kp LS(SINGLE_QUOTE)>, <&kp QUESTION>;
+
+            tapping-term-ms = <150>;
         };
     };
 
