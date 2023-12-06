@@ -20,6 +20,13 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        tap_dance: tap_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp LS(SINGLE_QUOTE)>, <&kp QUESTION>;
+        };
     };
 
     combos {
