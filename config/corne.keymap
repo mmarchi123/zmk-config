@@ -112,5 +112,16 @@
                                         &trans        &to 0         &trans          &trans       &trans           &to 1
             >;
         };
+
+        bluetooth {
+            bindings = <
+&bt BT_NXT  &bt BT_PRV     &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans         &trans        &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &bt BT_DISC 0  &bt BT_SEL 0  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                         &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "bluetooth";
+        };
     };
 };
