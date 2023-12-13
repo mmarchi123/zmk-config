@@ -95,6 +95,8 @@
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V         &kp B             &kp N                    &kp M            &tp LESS_THAN COMMA  &tp GREATER_THAN PERIOD  &tp QUESTION SLASH  &kp DELETE
                          &kp LGUI  &layer_dance  &tp LALT SPACE    &tp LEFT_SHIFT KP_ENTER  &kp BSPC         &to 2
             >;
+
+            label = "CHARS";
         };
 
         Numbers {
@@ -110,6 +112,8 @@
 &kp LSHFT  &kp N6    &kp N7  &kp N8    &kp N9    &kp N0       &kp PERIOD  &kp PLUS   &kp TILDE     &kp LBRC  &kp RBRC  &kp DEL
                              &trans    &to 0     &trans       &trans      &trans     &to 2
             >;
+
+            label = "Numbers";
         };
 
         FN {
@@ -125,6 +129,8 @@
 &trans  &trans      &trans      &trans        &kp LS(LC(TAB))  &kp LC(TAB)    &kp LC(LS(TAB))  &kp LC(TAB)  &trans  &trans     &trans   &trans
                                 &trans        &to 0            &trans         &trans           &trans       &to 1
             >;
+
+            label = "Fn";
         };
 
         BT {
