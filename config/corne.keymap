@@ -29,6 +29,15 @@
 
             tapping-term-ms = <150>;
         };
+
+        layer_dance: layer_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYER_DANCE";
+            #binding-cells = <0>;
+            bindings = <&to 1>, <&to 0>;
+
+            tapping-term-ms = <150>;
+        };
     };
 
     combos {
@@ -120,10 +129,10 @@
 
         bluetooth {
             bindings = <
-&trans  &bt BT_PRV     &bt BT_NXT    &trans  &trans  &out OUT_TOG    &bt BT_CLR  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &trans        &trans  &trans  &trans          &trans      &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_DISC 0  &bt BT_SEL 0  &trans  &trans  &trans          &trans      &trans  &trans  &trans  &trans  &trans
-                                     &trans  &to 0   &trans          &trans      &trans  &trans
+&trans  &bt BT_PRV     &bt BT_NXT    &trans  &trans        &out OUT_TOG    &bt BT_CLR  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &trans        &trans  &trans        &trans          &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &bt BT_DISC 0  &bt BT_SEL 0  &trans  &trans        &trans          &trans      &trans  &trans  &trans  &trans  &trans
+                                     &trans  &layer_dance  &trans          &trans      &trans  &trans
             >;
 
             label = "bluetooth";
